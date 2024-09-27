@@ -1,0 +1,138 @@
+/* Font and Body Styling */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+  background-color: #f9fafb; /* Light background for contrast */
+}
+
+.container {
+  width: 95%;
+  background-color: #fff; /* White background for table */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for a subtle 3D effect */
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd; /* Lighter border for a cleaner look */
+  padding: 12px 16px; /* More padding for better spacing */
+  text-align: left; /* Align text to the left for better readability */
+}
+
+th {
+  background-color: #f2f2f2;
+  cursor: pointer;
+  height: 60px;
+  font-weight: 700;
+  color: #555;
+}
+
+td {
+  cursor: pointer;
+  outline: none;
+  font-weight: 400;
+  color: #333;
+}
+
+/* Action Icons */
+.action-icons {
+  display: flex;
+}
+
+.action-icons i {
+  font-size: 24px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: color 0.3s ease;
+}
+
+.action-icons i:hover {
+  color: #007BFF; /* Blue color on hover */
+}
+
+/* Set specific column widths based on content */
+th:nth-child(1), td:nth-child(1) { /* ID column */
+  width: 5%;
+  border-right: none; /* Removes the line between the first and second columns */
+}
+
+th:nth-child(2), td:nth-child(2) { /* Chemical Name column */
+  width: 20%;
+  border-left: none; /* Removes the line between the first and second columns */
+}
+
+th:nth-child(3), td:nth-child(3) { /* Vendor column */
+  width: 15%;
+}
+
+th:nth-child(4), td:nth-child(4) { /* Density column */
+  width: 10%;
+}
+
+th:nth-child(5), td:nth-child(5) { /* Viscosity column */
+  width: 10%;
+}
+
+th:nth-child(6), td:nth-child(6) { /* Packaging column */
+  width: 10%;
+}
+
+th:nth-child(7), td:nth-child(7) { /* Pack Size column */
+  width: 10%;
+}
+
+th:nth-child(8), td:nth-child(8) { /* Unit column */
+  width: 5%;
+}
+
+th:nth-child(9), td:nth-child(9) { /* Quantity column */
+  width: 10%;
+}
+
+th:nth-child(10), td:nth-child(10) { /* Actions column */
+  width: 5%;
+}
+
+/* Hover Effect for Table Rows */
+tr:hover {
+  background-color: #f0f8ff; /* Light blue hover color */
+}
+
+/* Smooth Transitions for Hover */
+th, td {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Typography for Table */
+th, td {
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.5;
+}
